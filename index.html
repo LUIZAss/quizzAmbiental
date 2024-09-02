@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Ambiental</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz Ambiental</h1>
+        <div id="quiz">
+            <div class="question-container">
+                <p class="question">Pergunta será exibida aqui</p>
+                <ul class="choices">
+                    <li><input type="radio" name="answer" class="answer" id="a"><label for="a" id="a_text">Texto A</label></li>
+                    <li><input type="radio" name="answer" class="answer" id="b"><label for="b" id="b_text">Texto B</label></li>
+                    <li><input type="radio" name="answer" class="answer" id="c"><label for="c" id="c_text">Texto C</label></li>
+                    <li><input type="radio" name="answer" class="answer" id="d"><label for="d" id="d_text">Texto D</label></li>
+                </ul>
+            </div>
+            <button id="submit">Enviar</button>
+        </div>
+        <div id="result" class="hidden">
+            <h2>Você completou o quiz!</h2>
+            <p id="score"></p>
+            <button id="reload">Recomeçar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
